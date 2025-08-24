@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>Formulare</title>
+	</head>
+	<body>
+		<fieldset>
+		      <legend>Adresse:</legend>
+            <p>Anrede *<br >
+            <input type="radio" name="anrede"
+             value="Herr" > Herr
+             <input type="radio" name="anrede"
+             value="Frau" > Frau
+             <input type="radio" name="anrede"
+             value="anderes" > anderes
+             </p>
+			 <p>Vorname *</p>
+			 <input type="text" name="vorname"
+			 maxlength="30" required >
+			 <p>Nachname *</p>
+			 <input type="text" name="nachname"
+			 maxlength="30" required >
+			 <p>Strasse</p>
+			 <input type="text" name="strasse"
+			 maxlength="30" required >
+			 <p>PLZ / Ort</p>
+			 <input type="text" name="plz / ort"
+			 maxlength="10" size="5" >
+			 <input type="text" name="plz / ort"
+			 maxlength="30" required >
+			 <p>Land *</p>
+			 <input list="browsers" name="browsers" required>
+			 <datalist id="browsers">
+				<option value="">-- bitte wählen --</option>
+				<option value="schweiz"></option>
+				<option value="Deutschland"></option>
+				<option value="Venezuela"></option>
+			 </datalist>
+		</fieldset>
+		<fieldset>
+             <legend>Kontakt:</legend>
+				<p>Telefon *</p>
+				<input type="tel" name="telefon"
+				maxlength="30" required >
+				<p>Email *</p>
+				<input type="email" name="email"
+				maxlength="30" required >
+				<p>URL</p>
+				<input type="url" name="url"
+				maxlength="30" required >
+		</fieldset>
+		<fieldset>
+			<legend>Persönliche Angaben</legend>
+			<p>Hobbies</p>
+			<input type="checkbox" name="hobby"
+			value="Basketball" > Basketball
+			<input type="checkbox" name="hobby"
+			value="Fussball" > Fussball
+			<input type="checkbox" name="hobby"
+			value="Eishockey" > Eishockey
+			<input type="checkbox" name="hobby"
+			value="Anderes" > Anderes
+			<p>Bemerkungen</p>
+			<textarea id="comments" name="comments" cols="20" rows="4" placeholder="Ihre Bemerkungen..."></textarea>
+		</fieldset>
+		<fieldset>
+			<input type="reset" value="Löschen">
+            <input type="submit" value="Senden">
+		</fieldset>
+	</body>
+</html>
