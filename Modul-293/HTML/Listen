@@ -1,1 +1,87 @@
+<!DOCTYPE html> 
 
+<html> 
+
+  <head> 
+
+    <title>Ein erster Versuch</title> 
+
+  </head> 
+
+  <body>
+
+    <div> 
+
+      <h1><p><strong>List</strong></p></h1>
+
+    </div>
+
+      <dl>
+        <h2>
+          <dt>Ungeordnete Liste</dt>
+        </h2>
+        <ul>
+        <li>Eintrag 1</li>
+        <li>Eintrag 2</li>
+        <li>Eintrag 3</li>
+        </ul>
+      </dl>
+
+      <dl>
+        <h2>
+          <dt>Geordnete Liste</dt>
+        </h2>
+        <ol>
+          <li>Eintrag 1</li>
+          <li>Eintrag 2</li>
+          <li>Eintrag 3</li>
+        </ol>
+      </dl>
+
+      <dl>
+        <h2>
+          <dt>Verschachtelte liste</dt>
+      </h2>
+      <ol>
+        <li>Punkt 1
+          <ul>
+            <li>Unterpunkte 1.1</li>
+            <li>Unterpunkte 1.2</li>
+          </ul>
+        </li>
+        <li>Unterpunkt1.2
+          <ul>
+            <li>Unterpunkte 2.1</li>
+            <li>Unterpunkte 2.2</li>
+          </ul>
+        </li>
+
+      </ol>
+    </dl>
+
+      
+
+
+
+
+      <p><h2>Definition</h2></p>
+
+      <dl>
+          <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+        <dt>IDE</dt>
+        <dd>Interated Development Environment</dd>
+      </dl>
+
+
+
+
+
+
+    </div> 
+
+  <body>
+
+</html> 
