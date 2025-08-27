@@ -1,1 +1,13 @@
-
+#strartseite {
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 5px;
+}
+#wrapper {
+    background-color: yellow;
+}
+#kopfbereich {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
