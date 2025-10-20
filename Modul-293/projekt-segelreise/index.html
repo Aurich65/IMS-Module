@@ -1,41 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>projekt-segelreise</title>
-    <link rel="stylesheet" href="styles.css">
+<html lang="de">
+<head>
     <meta charset="UTF-8">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#Fotos">Fotos</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Orte</a>
-    <div class="dropdown-content">
-      <a href="#">Costa Rica</a>
-      <a href="#">Niederlande</a>
-      <a href="#">Frankreich</a>
-      <a href="#">Tenerifa</a>
-      <a href="#">kape verde</a>
-      <a href="#">Aruba</a>
-      <a href="#">Kolumbien</a>
-      <a href="#">Panama</a>
-      <a href="#">Kuba</a>
-      <a href="#">Bermudas</a>
-      <a href="#">Azoren</a>
-    </div>
-  </li>
-</ul>
-<div class="button-container">
-  <button class="button Orte">Orte</button>
-  <button class="button Fotos">Fotos</button>
-  <button class="button Ueber">Über mich</button>
-</div>
+    <title>Segelreise von Aurelius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link"><img src="./images/logo.png" alt="Logo Segelschiff" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueber-mich.html">Über mich</a></li>
+                <li class="dropdown">
+                    <a href="reisebericht.html" class="dropbtn">Reisebericht</a>
+                    <div class="dropdown-content">
+                        <a href="reisebericht.html#amsterdam">Amsterdam</a>
+                        <a href="reisebericht.html#frankreich">Frankreich</a>
+                        <a href="reisebericht.html#spanien">Spanien</a>
+                        <a href="reisebericht.html#kapverden">Kapverden</a>
+                        <a href="reisebericht.html#kuba">Kuba</a>
+                        <a href="reisebericht.html#azoren">Azoren</a>
+                    </div>
+                </li>
+                <li><a href="costa-rica.html">Costa Rica Spezial</a></li>
+                <li><a href="fotogalerie.html">Fotogalerie</a></li>
+                <li class="dropdown">
+                    <a href="kontakt.html" class="dropbtn">Kontakt</a>
+                    <div class="dropdown-content">
+                        <a href="kontakt.html">Kontaktformular</a>
+                        <a href="impressum.html">Impressum</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-      <img src="./images/map3.png" alt="map">
-      <footer>Hallo</footer>
-  </body>
+    <main>
+        <div>
+        <h1>Willkommen zu meiner Segelreise!</h1>
+          <p>Auf dieser Seite teile ich die Eindrücke, Fotos und Erfahrungen meiner 6-monatigen Segelreise durch 10 verschiedene Länder.</p>
+        </div>
+        
+        <div class="map-container">
+            <svg class="map-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polyline points="48,22 45,26 38,42 38,48 25,48 23,47 21,48 19,49 21,42 28,40 38,34 48,22" />
+            </svg>
+            <a href="reisebericht.html#amsterdam" class="map-point" style="top: 22%; left: 48%;" data-title="Amsterdam"></a>
+            <a href="reisebericht.html#frankreich" class="map-point" style="top: 26%; left: 45%;" data-title="Roscoff"></a>
+            <a href="reisebericht.html#spanien" class="map-point" style="top: 42%; left: 38%;" data-title="Teneriffa"></a>
+            <a href="reisebericht.html#kapverden" class="map-point" style="top: 48%; left: 38%;" data-title="Kapverden"></a>
+            <a href="reisebericht.html#aruba" class="map-point" style="top: 48%; left: 25%;" data-title="Aruba"></a>
+            <a href="reisebericht.html#kolumbien" class="map-point" style="top: 47%; left: 23%;" data-title="Kolumbien"></a>
+            <a href="reisebericht.html#panama" class="map-point" style="top: 48%; left: 21%;" data-title="Panama"></a>
+            <a href="reisebericht.html#costa-rica-bericht" class="map-point" style="top: 49%; left: 19%;" data-title="Costa Rica"></a>
+            <a href="reisebericht.html#kuba" class="map-point" style="top: 42%; left: 21%;" data-title="Kuba"></a>
+            <a href="reisebericht.html#bermudas" class="map-point" style="top: 40%; left: 28%;" data-title="Bermudas"></a>
+            <a href="reisebericht.html#azoren" class="map-point" style="top: 34%; left: 38%;" data-title="Azoren"></a>
+            <a href="reisebericht.html#amsterdam-return" class="map-point" style="top: 22%; left: 48%;" data-title="Amsterdam (Rückkehr)"></a>
+        </div>
+
+        <div class="button-container">
+            <a href="reisebericht.html" class="button Orte">Orte</a>
+            <a href="fotogalerie.html" class="button Fotos">Fotos</a>
+            <a href="ueber-mich.html" class="button Ueber">Über mich</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aurelius Rettig</p>
+    </footer>
+
+</body>
 </html>
