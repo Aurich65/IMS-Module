@@ -235,6 +235,8 @@ footer {
 .contact-container {
     display: flex;
     gap: 40px;
+    margin-right: 50px;
+    margin: 20px;
 }
 
 .contact-info, .contact-form {
