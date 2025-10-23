@@ -1,4 +1,5 @@
 /* Allgemeine Stile */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -21,8 +22,9 @@ main {
     margin: 20px auto;
 }
 
+
 h1, h2 {
-    color: #005f73; /* Ein dunkleres Blaugrün */
+    color: #005f73;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,27 +44,40 @@ p {
     line-height: 1.6;
 }
 
+
 /* Header und Navigation */
+
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Zentriert den Inhalt */
     align-items: center;
     background-color: #006994;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative; 
 }
 
 .logo {
+    position: absolute; /* Nimmt das Logo aus dem normalen Fluss */
+    left: 20px; /* Positioniert es links */
+    top: 50%; /* Vertikal zentrieren */
+    transform: translateY(-50%); /* Feinjustierung für perfekte Mitte */
     width: auto;
     height: 50px;
 }
+
+
+/* Navigation (bleibt zentriert durch justify-content im Header) */
+nav {
+    /* Keine spezielle Positionierung mehr nötig */
+}
+
 
 nav ul {
     padding: 0;
     list-style-type: none;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav li {
@@ -82,6 +97,7 @@ nav a:hover, .dropdown:hover .dropbtn {
     background-color: #20B2AA;
 }
 
+/* Dropdown-Menü */
 li.dropdown {
   position: relative;
 }
@@ -109,11 +125,11 @@ li.dropdown {
   display: block;
 }
 
-/* Interaktive Karte mit CSS-Punkten und SVG-Linie */
+/* Interaktive Karte */
 .map-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Seitenverhältnis, passt sich an die Bildgrösse an */
+    padding-top: 56.25%; /* 16:9 Seitenverhältnis */
     margin: 20px 0;
     background-image: url('./images/map3.png');
     background-size: cover;
@@ -128,7 +144,7 @@ li.dropdown {
     height: 100%;
     fill: none;
     stroke: red;
-    stroke-width: 0.5; /* Eine dünne Linie */
+    stroke-width: 0.5;
 }
 
 .map-point {
@@ -137,37 +153,35 @@ li.dropdown {
     height: 12px;
     background-color: darkblue;
     border-radius: 50%;
-    transform: translate(-50%, -50%); /* Zentriert den Punkt genau */
+    transform: translate(-50%, -50%);
     transition: transform 0.2s;
 }
 
 .map-point:hover {
-    transform: translate(-50%, -50%) scale(1.5); /* Macht den Punkt grösser beim Hover */
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
-/* Tooltip mit reinem CSS */
+/* Tooltip für Kartenpunkte (Hover sichtbar) */
 .map-point::after {
-    content: attr(data-title); /* Holt den Text aus dem data-title Attribut */
+    content: attr(data-title);
     position: absolute;
-    bottom: 150%; /* Positioniert den Tooltip über dem Punkt */
+    bottom: 150%;
     left: 50%;
     transform: translateX(-50%);
-    
     background-color: rgba(0, 95, 115, 0.9);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    white-space: nowrap; /* Verhindert, dass der Text umbricht */
-    
-    opacity: 0; /* Standardmässig unsichtbar */
+    white-space: nowrap;
+    opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0.2s;
 }
 
 .map-point:hover::after {
-    opacity: 1; /* Wird beim Hover sichtbar */
+    opacity: 1;
     visibility: visible;
 }
 
@@ -182,10 +196,10 @@ li.dropdown {
 .button {
     background-color: #006994;
     border: none;
-    color: white !important; /* Wichtig, um Link-Farbe zu überschreiben */
+    color: white !important;
     text-align: center;
     text-decoration: none;
-    display: flex; /* Für vertikale Zentrierung */
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
@@ -222,13 +236,37 @@ li.dropdown {
     padding: 5px;
 }
 
+/* Korrigiert den Textabstand bei gedrehten Bildern */
+.gallery-item .rotate-right + p,
+.gallery-item .rotate-left + p {
+    margin-top: 120px; /* Schafft Platz, damit der Text nicht überlappt wird */
+    margin-bottom: 50px;
+}
+
+.rotate-right {
+    transform: rotate(90deg);
+}
+
+.rotate-left {
+    transform: rotate(-90deg);
+}
+
+/* Spezifische Anpassungen für die Galerie */
+.gallery-item.align-top {
+    margin-top: 120px;
+}
+
+.gallery-item .move-up {
+    margin-top: -70px;
+}
+
 /* Footer */
 footer {
     background-color: #006994;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: auto; /* Sorgt dafür, dass der Footer unten bleibt */
+    margin-top: auto; /* Hält den Footer am unteren Rand */
 }
 
 /* Kontaktseite */
