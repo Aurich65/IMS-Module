@@ -58,18 +58,18 @@ header {
 }
 
 .logo {
-    position: absolute; /* Nimmt das Logo aus dem normalen Fluss */
-    left: 20px; /* Positioniert es links */
-    top: 50%; /* Vertikal zentrieren */
-    transform: translateY(-50%); /* Feinjustierung für perfekte Mitte */
+    position: absolute; 
+    left: 20px; /* Logo links platzieren */
+    top: 50%; 
+    transform: translateY(-50%); /* Logo in der Mitte (vertikal) */
     width: auto;
     height: 50px;
 }
 
 
-/* Navigation (bleibt zentriert durch justify-content im Header) */
+/* Navigation zentrieren */
 nav {
-    /* Keine spezielle Positionierung mehr nötig */
+    
 }
 
 
